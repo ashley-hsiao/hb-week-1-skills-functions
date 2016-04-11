@@ -36,6 +36,14 @@ def string_multipler(string, n):
 #    than 0" if higher than zero and "Lower than 0" if lower
 #    than zero. If integer is 0 print "Zero".
 
+def number_greater_than_zero(num):
+    if num > 0:
+        print "Higher than 0"
+    elif num < 0:
+        print "Lower than 0"
+    else:
+        print "Zero"
+
 
 # 6. Write a function that takes an integer and returns a
 #    boolean (True or False), depending on whether the number
