@@ -72,6 +72,9 @@ def number_of_spaces(sentence):
 #    percentage should be optional; if not given, it should
 #    default to 15%.
 
+def calculate_meal(price, tip=15):
+    return price + price * (float(tip)/100)
+
 
 # 9. Write a function that takes an integer as an argument and
 #    returns two pieces of information as strings ---
