@@ -86,6 +86,24 @@ def calculate_meal(price, tip=15):
 # 	variables --- sign and parity (whether it's positive
 # 	or negative). Print sign and parity.
 
+def integer_info(num):
+    sign = None
+    parity = None
+
+    if num > 0:
+        sign = "Positive"
+    else:
+        sign = "Negative"
+
+    if num % 2 == 0:
+        parity = "Even"
+    else:
+        parity = "Odd"
+
+    return [sign, parity]
+
+
+
 
 ################################################################
 # PART TWO
