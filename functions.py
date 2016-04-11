@@ -72,8 +72,7 @@ def number_of_spaces(sentence):
 #    percentage should be optional; if not given, it should
 #    default to 15%.
 
-"""Assumes user puts in whole number for percentage, not decimal. Therefore tip is floated and divided by 100.
-"""
+# Assumes user puts in whole number for percentage, not decimal. Therefore tip is floated and divided by 100.
 
 def calculate_meal(price, tip=15):
     return price + price * (float(tip)/100)
@@ -125,8 +124,7 @@ print parity
 #    If the state is California, apply a 7% tax within the function.
 #    Your function should return the total cost of the item including tax.
 
-"""Assumes user puts in whole number for percentage, not decimal. Therefore tax is floated and divided by 100.
-"""
+# Assumes user puts in whole number for percentage, not decimal. Therefore tax is floated and divided by 100.
 
 
 def calculate_item_cost(cost, state, tax=5):
@@ -161,3 +159,11 @@ def print_letter(name, job_title, sender_name):
 # 4. Turn the block of code from the directions into a function. This
 #    function will take a number and append it to *numbers*. It doesn't
 #    need to return anything.
+
+# Not sure what this question really means. Is *numbers* supposed to be a list that this function keeps adding to?
+
+numbers = []
+
+
+def append_to_numbers(num):
+    numbers.append(num)
