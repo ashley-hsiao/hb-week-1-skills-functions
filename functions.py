@@ -10,12 +10,19 @@
 def print_hello_world():
     print "Hello World"
 
+
 # 2. Write a function that takes a name as a string and
 #    prints "Hi" followed by the name.
+
+def user_greeting(name):
+    print "Hi {}".format(name)
 
 
 # 3. Write a function that takes two integers and multiplies
 #    them together. Print the result.
+
+def mult_two_nums(x, y):
+    return x * y
 
 
 # 4. Write a function that takes a string and an integer and
