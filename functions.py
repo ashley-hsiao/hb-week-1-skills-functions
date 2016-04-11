@@ -146,10 +146,17 @@ def print_name_title(name, job_title="Engineer"):
     return "{} {}".format(job_title, name)
 
 
-# 3. Given a receiver's name, receiver's job title, and sender's name, print the following letter:      
+# 3. Given a receiver's name, receiver's job title, and sender's name, print the following letter:
 #       Dear JOB_TITLE RECEIVER_NAME, I think you are amazing! Sincerely,
-#       SENDER_NAME. 
+#       SENDER_NAME.
 #    Use the function from #2 to construct the full title for the letter's greeting.
+
+def print_letter(name, job_title, sender_name):
+    full_title = print_name_title(name, job_title)
+    print "Dear {}, I think you are amazing! Sincerely, {}.".format(full_title, sender_name)
+
+# Error occurs when user does not pass through a job title as an argument - print_letter() takes exactly 3 arguments (2 given), although print_name_title() would default job_title to "Engineer" if not passed through - Figure this out later.
+
 
 # 4. Turn the block of code from the directions into a function. This
 #    function will take a number and append it to *numbers*. It doesn't
