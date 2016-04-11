@@ -103,6 +103,9 @@ def integer_info(num):
     return [sign, parity]
 
 
+sign, parity = integer_info(32)
+print sign
+print parity
 
 
 ################################################################
