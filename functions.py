@@ -28,6 +28,9 @@ def mult_two_nums(x, y):
 # 4. Write a function that takes a string and an integer and
 #    prints the string that many times
 
+def string_multipler(string, n):
+    print string * n
+
 
 # 5. Write a function that takes an integer and prints "Higher
 #    than 0" if higher than zero and "Lower than 0" if lower
