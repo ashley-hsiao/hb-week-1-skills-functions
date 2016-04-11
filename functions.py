@@ -49,6 +49,9 @@ def number_greater_than_zero(num):
 #    boolean (True or False), depending on whether the number
 #    is evenly divisible by 3.
 
+def is_divisible_by_3(num):
+    return num % 3 == 0
+
 
 # 7. Write a function that takes a sentence as one string and
 #    returns the number of spaces.
