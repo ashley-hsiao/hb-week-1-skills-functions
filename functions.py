@@ -72,6 +72,9 @@ def number_of_spaces(sentence):
 #    percentage should be optional; if not given, it should
 #    default to 15%.
 
+"""Assumes user puts in whole number for percentage, not decimal. Therefore tip is floated and divided by 100.
+"""
+
 def calculate_meal(price, tip=15):
     return price + price * (float(tip)/100)
 
@@ -122,10 +125,26 @@ print parity
 #    If the state is California, apply a 7% tax within the function.
 #    Your function should return the total cost of the item including tax.
 
+"""Assumes user puts in whole number for percentage, not decimal. Therefore tax is floated and divided by 100.
+"""
+
+
+def calculate_item_cost(cost, state, tax=5):
+    if state == "CA":
+        tax = 7
+
+    return cost + cost * (float(tax)/100)
+
+
 # 2. Turn the block of code from the directions into a function.
 #	 Take a name and a job title as parameters, making it so the
 # 	 job title defaults to "Engineer" if a job title is not passed in.
 #	 Return the person's title and name.
+
+def print_name_title(name, job_title="Engineer"):
+    # Use string formatting so that output is not a string
+    return "{} {}".format(job_title, name)
+
 
 # 3. Given a receiver's name, receiver's job title, and sender's name, print the following letter:      
 #       Dear JOB_TITLE RECEIVER_NAME, I think you are amazing! Sincerely,
